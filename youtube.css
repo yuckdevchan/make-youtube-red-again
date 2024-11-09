@@ -1,0 +1,49 @@
+/* Change SVG colors of most icons from magenta to red */
+*[fill="#FF0033"] {
+    fill: red;
+}
+
+*[color="#FF0033"] {
+    color: red;
+}
+
+/* Video progress bar */
+.ytp-play-progress {
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 100%, rgb(255, 0, 0) 100%) !important;
+}
+
+/* Progress bar in thumbnails for unfinished videos */
+.ytd-thumbnail-overlay-resume-playback-renderer {
+    background: linear-gradient(to right, rgb(255, 0, 0) 100%, rgb(255, 0, 0) 100%) !important;
+}
+
+/* Change brand color to red */
+:root {
+    --yt-spec-static-overlay-background-brand: red !important;
+}
+
+/* "LIVE" badge on live channels */
+.yt-spec-avatar-shape__live-badge {
+    background-color: red !important;
+}
+
+/* Ring around channel logo when live */
+.yt-spec-avatar-shape--live-ring::after {
+    background: linear-gradient(to right, rgb(255, 0, 0) 100%, rgb(255, 0, 0) 100%) !important;
+}
+
+/* Channel live icon in sidebar */
+yt-icon.guide-entry-badge.style-scope.ytd-guide-entry-renderer .yt-icon-shape.style-scope.yt-icon path {
+    fill: red !important;
+}
+
+/* Unread notifications badge, change background to red and text color to white */
+.ytd-notification-topbar-button-renderer .yt-spec-icon-badge-shape__badge {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* HD quality badge on settings button on the watch page */
+.ytp-hd-quality-badge::after {
+    background-color: red !important;
+}
